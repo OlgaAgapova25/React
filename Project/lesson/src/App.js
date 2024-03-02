@@ -1,20 +1,20 @@
-import logo from './logo.svg';
+
+import React from'react';
 import './App.css';
+import Counter from './components/counter';
+import ShowList from './components/showList';
+import Show from './components/visible';
+
 
 function App() {
   return (
     <div className="App">
-      <Message message = "Message text 1" />
-      <Message message = "Message text 2" />
+      <h1>Text</h1>
+      <Counter />
+      <Show />
+      <ShowList />
     </div>
   );
-}
-
-function Message({message}) {
-  return (
-  <div>
-    <p className="MyMessage"> {message} </p>
-  </div>  );
 }
 
 export default App;
